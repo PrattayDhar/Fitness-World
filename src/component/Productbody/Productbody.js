@@ -6,7 +6,7 @@ const Productbody = (props) => {
     return (
         <div className='product-body'>
             <div className="card">
-                <img src={img} className="card-img-top img" alt="Subject_Image" />
+                <img src={img} className="card-img-top img" alt="Subject_Image"/>
                 <div className="card-body">
                     <h3 className="card-title">{name}</h3>
                     <p className="card-text">{Description}</p>

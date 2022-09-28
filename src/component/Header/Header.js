@@ -9,7 +9,6 @@ const Header = () => {
             <div> <a href="#">Home</a>
            <a href="#">Tips</a></div>
           
-            
         </div>
     );
 };

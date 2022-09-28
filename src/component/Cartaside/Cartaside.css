@@ -1,20 +1,23 @@
 .time {
-    
+
     display: flex;
     justify-content: space-around;
-  
+
 
 }
-.timemain{
+
+.timemain {
     text-align: center;
     margin-top: 10%;
     border-radius: 5px;
     background-color: aqua;
-    
+
 }
-.time button{
+
+.time button {
     border-radius: 20px;
 }
+
 .about {
     border: 2px solid bisque;
     background-color: salmon;
@@ -26,35 +29,43 @@
     margin-top: 10%;
 
 }
-.mainabout{
+
+.mainabout {
     margin-top: 10%;
-       
+
 }
-.name{
+
+.name {
     text-align: center;
 }
-.btn{
+
+.btn {
     background-color: aqua;
-    border-radius: 10px;}
-   
-    .form button{
-        margin-top: 10%;
-    }
-   .form h4{
-text-align: center;
-   }
-    .form{
-        
-        margin-top: 10%;
-    }
+    border-radius: 10px;
+}
+
+.form button {
+    margin-top: 10%;
+}
+
+.form h4 {
+    text-align: center;
+}
+
+.form {
+
+    margin-top: 10%;
+}
+
 @media screen and (max-width:660px) {
-    .about{
+    .about {
         display: list-item;
         text-align: center;
     }
-    .time{
+
+    .time {
         display: list-item;
         align-items: center;
     }
-         
+
 }
