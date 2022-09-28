@@ -1,0 +1,42 @@
+.img {
+    width: 150px;
+    height: 200px;
+    margin: 2px;
+    align-items: center;
+}
+
+.product-body {
+    margin-top: 5%;
+    margin-left: 3%;
+    padding-bottom: 5%;
+
+}
+
+.card {
+    width: 22rem;
+    height: 25rem;
+}
+
+button {
+    margin-top: 46px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+    background-color: #ffe0b3;
+    bottom: 0;
+}
+
+
+@media screen and (max-width:660px) {
+    .card {
+        width: 11rem;
+        height: 15rem;
+    }
+
+    .img {
+        width: 35px;
+        height: 90px;
+        margin: 2px;
+    }
+}

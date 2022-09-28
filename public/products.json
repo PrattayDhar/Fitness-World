@@ -1,0 +1,50 @@
+[
+   {
+      "id": "01",
+      "name": "Treadmill",
+      "Description": "A treadmill is a device generally used for walking, running, or climbing while staying in the same place.",
+      "Age": 40,
+      "Time": 20,
+      "img": "https://cdn.webshopapp.com/shops/281654/files/282878475/treadmill-fitrun-30.jpg"
+   },
+   {
+      "id": "02",
+      "name": "Elliptical trainer",
+      "Description": "An elliptical trainer or cross-trainer is a stationary exercise machine used to stair climb, walk.",
+      "Age": 20,
+      "Time": 10,
+      "img": "https://sportsworld.com.bd/wp-content/uploads/2021/08/Elliptical-Trainer-Housefit-Freewell-60-Cross.png"
+   },
+   {
+      "id": "03",
+      "name": "Dumbbell",
+      "Description": "The dumbbell, a type of free weight, is a piece of equipment used in weight  with one in each hand.",
+      "Age": 20,
+      "Time": 30,
+      "img": "https://www.ubuy.com.bd/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFlODlYRmtDS0wuX0FDX1NMMTUwMF8uanBn.jpg"
+   },
+   {
+      "id": "04",
+      "name": "Rowing machine",
+      "Description": "An indoor rower, or rowing machine, is a machine used to simulate the action of watercraft rowing .",
+      "Age": 30,
+      "Time": 30,
+      "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1655739956-best-rowing-machines-jtx-1655739949.jpg"
+   },
+   {
+      "id": "05",
+      "name": "Kettlebell",
+      "Description": "In weight training, a kettlebell is a cast-iron or cast-steel ball with a handle attached to the top. ",
+      "Age": 21,
+      "Time": 30,
+      "img": "https://static-content-1.boomfit.com/5490-large_default/kettlebell-12kg.jpg"
+   },
+   {
+      "id": "06",
+      "name": "Smith Machine",
+      "Description": "The Smith machine is a weight machine used for weight training. It consists of a barbell that is fixed.",
+      "Age": 25,
+      "Time": 25,
+      "img": "https://hirakraja.com/5085-large_default/wnq-commercial-smith-machine-5518ka.jpg"
+   }
+]

@@ -1,0 +1,60 @@
+.time {
+    
+    display: flex;
+    justify-content: space-around;
+  
+
+}
+.timemain{
+    text-align: center;
+    margin-top: 10%;
+    border-radius: 5px;
+    background-color: aqua;
+    
+}
+.time button{
+    border-radius: 20px;
+}
+.about {
+    border: 2px solid bisque;
+    background-color: salmon;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10%;
+
+}
+.mainabout{
+    margin-top: 10%;
+       
+}
+.name{
+    text-align: center;
+}
+.btn{
+    background-color: aqua;
+    border-radius: 10px;}
+   
+    .form button{
+        margin-top: 10%;
+    }
+   .form h4{
+text-align: center;
+   }
+    .form{
+        
+        margin-top: 10%;
+    }
+@media screen and (max-width:660px) {
+    .about{
+        display: list-item;
+        text-align: center;
+    }
+    .time{
+        display: list-item;
+        align-items: center;
+    }
+         
+}

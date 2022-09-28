@@ -1,0 +1,36 @@
+.body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: gray;
+}
+
+.product-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cart-aside {
+    border: 2px solid brown;
+    height: 40rem;
+    margin-right: 4%;
+    margin-top: 30%;
+} 
+
+
+ @media only screen and (max-width:668px) {
+    .body {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .product-body {
+        display: grid;
+       grid-template-columns:repeat(1,1fr)
+    }
+        .cart-aside {
+            border: 2px solid brown;
+            height: 45rem;
+            margin-right: 4%;
+            margin-top: 30%;
+        }
+}
