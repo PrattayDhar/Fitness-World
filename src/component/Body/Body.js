@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cartaside from '../Cartaside/Cartaside';
 import Productbody from '../Productbody/Productbody';
+import Question from '../Question/Question';
 
 import './Body.css'
 
@@ -28,6 +29,9 @@ const Body = () => {
             </div>
             <div className='cart-aside'>
                 <Cartaside Cart={Cart}></Cartaside>
+            </div>
+            <div>
+                <Question></Question>
             </div>
         </div>
     );
