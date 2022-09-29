@@ -15,13 +15,16 @@ const Cartaside = (props) => {
     const notify = () => {
         toast("Wow! You Successfully Completed Activity")
     }
+   
+   
     const Break = (props) => {
         localStorage.setItem("Break Time", props);
-        document.getElementById("brktime").innerHTML = `<p>${props}Min</p>`;
+        document.getElementById("brktime").innerText = props;
     };
     useEffect(() => {
+   
         const Value = localStorage.getItem("Break Time");
-        document.getElementById("brktime").innerHTML = `<p>${Value}Min</p>`;
+        document.getElementById("brktime").innerText = Value;
     }, []);
     return (
         <div className='mainabout'>
@@ -46,10 +49,10 @@ const Cartaside = (props) => {
             <div className='timemain'>
                 <h4>Add A Break</h4>
                 <div className='time'>
-                    <div className='btn' onClick={() => Break(20)} ><button>20s</button></div>
-                    <div className='btn' onClick={() => Break(30)}><button>30s</button></div>
-                    <div className='btn' onClick={() => Break(40)}><button>40s</button></div>
-                    <div className='btn' onClick={() => Break(50)}><button>50s</button></div>
+                    <div className='btn' onClick={() => Break('20 MIN')} ><button>20M</button></div>
+                    <div className='btn' onClick={() => Break('30 MIN')}><button>30M</button></div>
+                    <div className='btn' onClick={() => Break('40 MIN')}><button>40M</button></div>
+                    <div className='btn' onClick={() => Break('50 MIN')}><button>50M</button></div>
 
                 </div>
             </div>
@@ -62,9 +65,7 @@ const Cartaside = (props) => {
 
                 <div className='brkt'>
                     <h5>Break time:</h5>
-                    <p id='brktime'>
-
-                    </p>
+                    <p id='brktime'></p>
                 </div>
 
                 <button onClick={notify}>Activity Completed</button>
