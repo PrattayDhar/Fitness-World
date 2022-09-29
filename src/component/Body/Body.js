@@ -14,20 +14,20 @@ const Body = () => {
             .then(data => setproducts(data))
     }, []);
     const [Cart, setCart] = useState([]);
- const add=(product)=>{
-         let newCart=[];
-         newCart=[...Cart,product]
-         setCart(newCart);
- }
- 
-    
+    const add = (product) => {
+        let newCart = [];
+        newCart = [...Cart, product]
+        setCart(newCart);
+    }
+
+
     return (
         <div className='body'>
             <div className='product-body'>
                 {
                     products.map(product => <Productbody key={product.id} product={product} add={add}></Productbody>)}
 
-                
+
             </div>
             <div className='cart-aside'>
                 <Cartaside Cart={Cart}></Cartaside>

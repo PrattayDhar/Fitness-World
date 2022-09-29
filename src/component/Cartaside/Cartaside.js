@@ -6,29 +6,29 @@ import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 import './Cartaside.css'
 
 const Cartaside = (props) => {
-    const {Cart}=props;
-    let total=0;
-    for(const Exercise of Cart){
-        total=Exercise.Time+total;
+    const { Cart } = props;
+    let total = 0;
+    for (const Exercise of Cart) {
+        total = Exercise.Time + total;
     };
-   
-    const notify =()=>{
+
+    const notify = () => {
         toast("Wow! You Successfully Completed Activity")
     }
-    const Break= (props) => {
+    const Break = (props) => {
         localStorage.setItem("Break Time", props);
         document.getElementById("brktime").innerHTML = `<p>${props}Min</p>`;
     };
-    useEffect(() =>{
+    useEffect(() => {
         const Value = localStorage.getItem("Break Time");
-        document.getElementById("brktime").innerHTML =`<p>${Value}Min</p>` ;
+        document.getElementById("brktime").innerHTML = `<p>${Value}Min</p>`;
     }, []);
     return (
         <div className='mainabout'>
             <ToastContainer position="top-center"
                 reverseOrder={false} />
             <div className='name'><h1><FontAwesomeIcon icon={faPeopleGroup} /> Prattay</h1></div>
-            
+
             <div className='about'>
                 <div>
                     <h5>Hight</h5>
@@ -46,11 +46,11 @@ const Cartaside = (props) => {
             <div className='timemain'>
                 <h4>Add A Break</h4>
                 <div className='time'>
-                    <div className='btn'onClick={()=>Break(20)} ><button>20s</button></div>
-                    <div className='btn'onClick={()=>Break(30)}><button>30s</button></div>
-                    <div className='btn'onClick={()=>Break(40)}><button>40s</button></div>
-                    <div className='btn'onClick={()=>Break(50)}><button>50s</button></div>
-                   
+                    <div className='btn' onClick={() => Break(20)} ><button>20s</button></div>
+                    <div className='btn' onClick={() => Break(30)}><button>30s</button></div>
+                    <div className='btn' onClick={() => Break(40)}><button>40s</button></div>
+                    <div className='btn' onClick={() => Break(50)}><button>50s</button></div>
+
                 </div>
             </div>
             <div className='form'>
@@ -59,15 +59,15 @@ const Cartaside = (props) => {
                     <h5>Exercise time: </h5>
                     <p>{total} Min</p>
                 </div>
-                
+
                 <div className='brkt'>
                     <h5>Break time:</h5>
                     <p id='brktime'>
-                      
+
                     </p>
                 </div>
-               
-            <button onClick={notify}>Activity Completed</button>
+
+                <button onClick={notify}>Activity Completed</button>
             </div>
         </div>
     );

@@ -1,4 +1,4 @@
-.question{
+.question {
     border: 2px solid saddlebrown;
     background-color: blueviolet;
     margin-left: 20%;
@@ -7,7 +7,8 @@
     padding: 10px;
     font-size: small;
 }
-.question-body{
+
+.question-body {
     border: 2px solid wheat;
     background-color: antiquewhite;
     border-radius: 8px;
