@@ -3,6 +3,7 @@ import Cartaside from '../Cartaside/Cartaside';
 import Productbody from '../Productbody/Productbody';
 import Question from '../Question/Question';
 
+
 import './Body.css'
 
 const Body = () => {
@@ -18,6 +19,7 @@ const Body = () => {
          newCart=[...Cart,product]
          setCart(newCart);
  }
+ 
     
     return (
         <div className='body'>

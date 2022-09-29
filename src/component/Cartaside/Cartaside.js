@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,12 +11,18 @@ const Cartaside = (props) => {
     for(const Exercise of Cart){
         total=Exercise.Time+total;
     };
-    const Breaktime=(props)=>{
-         document.getElementById("brktime").innerHTML=`<p>${props}s</p>`;
-    }
+   
     const notify =()=>{
         toast("Wow! You Successfully Completed Activity")
     }
+    const Break= (props) => {
+        localStorage.setItem("Break Time", props);
+        document.getElementById("brktime").innerHTML = `<p>${props}Min</p>`;
+    };
+    useEffect(() =>{
+        const Value = localStorage.getItem("Break Time");
+        document.getElementById("brktime").innerHTML =`<p>${Value}Min</p>` ;
+    }, []);
     return (
         <div className='mainabout'>
             <ToastContainer position="top-center"
@@ -40,10 +46,10 @@ const Cartaside = (props) => {
             <div className='timemain'>
                 <h4>Add A Break</h4>
                 <div className='time'>
-                    <div className='btn'onClick={()=>Breaktime(20)} ><button>20s</button></div>
-                    <div className='btn'onClick={()=>Breaktime(30)}><button>30s</button></div>
-                    <div className='btn'onClick={()=>Breaktime(40)}><button>40s</button></div>
-                    <div className='btn'onClick={()=>Breaktime(50)}><button>50s</button></div>
+                    <div className='btn'onClick={()=>Break(20)} ><button>20s</button></div>
+                    <div className='btn'onClick={()=>Break(30)}><button>30s</button></div>
+                    <div className='btn'onClick={()=>Break(40)}><button>40s</button></div>
+                    <div className='btn'onClick={()=>Break(50)}><button>50s</button></div>
                    
                 </div>
             </div>
