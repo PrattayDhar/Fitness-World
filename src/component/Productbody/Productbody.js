@@ -3,6 +3,8 @@ import './Productbody.css';
 
 const Productbody = (props) => {
     const { name, img, Age, Time, Description } = props.product;
+    const{add}=props;
+    const product = props.product;
     return (
         <div className='product-body'>
             <div className="card">
@@ -11,8 +13,8 @@ const Productbody = (props) => {
                     <h3 className="card-title">{name}</h3>
                     <p className="card-text">{Description}</p>
                     <h5>Age:{Age}</h5>
-                    <h5>Time: {Time} Hour</h5>
-                    <button type="button" classNameName="btn btn-primary ">Add</button>
+                    <h5>Time: {Time} Min</h5>
+                    <button onClick={()=>add(product)} type="button" classNameName="btn btn-primary ">Add</button>
                 </div>
             </div>
         </div>

@@ -56,6 +56,14 @@
 
     margin-top: 10%;
 }
+.brkt{
+    display: flex;
+    justify-content: space-around;
+}
+.etime{
+    display: flex;
+    justify-content: space-around;
+}
 
 @media screen and (max-width:660px) {
     .about {

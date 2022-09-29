@@ -21,10 +21,13 @@ button {
     margin-top: 46px;
     width: 100%;
     padding: 15px;
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 15px;
     border: none;
     background-color: #ffe0b3;
     bottom: 0;
+}
+button:hover{
+    background-color: blue;
 }
 
 
