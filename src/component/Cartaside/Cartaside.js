@@ -15,11 +15,12 @@ const Cartaside = (props) => {
          document.getElementById("brktime").innerHTML=`<p>${props}s</p>`;
     }
     const notify =()=>{
-        toast("wow Nice")
+        toast("Wow! You Successfully Completed Activity")
     }
     return (
         <div className='mainabout'>
-            <ToastContainer/>
+            <ToastContainer position="top-center"
+                reverseOrder={false} />
             <div className='name'><h1><FontAwesomeIcon icon={faPeopleGroup} /> Prattay</h1></div>
             
             <div className='about'>
